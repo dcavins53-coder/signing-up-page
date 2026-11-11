@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Diva Cooks</h1>
+
+    <form>
+    <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="field">
+        <label for="password">Create a password for the members' page</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="field">
+        <label for="favorite-dish">Favorite dish</label>
+        <select id="favorite-dish" name="dish">
+            <option value="gumbo">Gumbo</option>
+            <option value="jambalaya">Jambalaya</option>
+            <option value="etouffee">Crawfish Étouffée</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <label for="message">Tell us about your cooking experience</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+
+    <button type="submit">Sign Up</button>
+</form>
+
+    <section id="reasons">
+        <h2>Three reasons to visit</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Fresh Ingredients</h3>
+                <p>Made from scratch daily with authentic spices and fresh produce.</p>
+            </div>
+            <div class="card">
+                <h3>Family Recipes</h3>
+                <p>Generations of traditional Cajun and Creole flavor in every bite.</p>
+            </div>
+            <div class="card">
+                <h3>Fast Service</h3>
+                <p>Hot, delicious street food served fresh to your hands.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

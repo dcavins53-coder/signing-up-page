@@ -1,0 +1,23 @@
+.cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 200px;
+    border: 2px solid darkgreen;
+    padding: 16px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 30rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
