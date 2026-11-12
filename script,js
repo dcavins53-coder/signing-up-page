@@ -1,0 +1,35 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+
+    if (form) {
+        form.addEventListener("submit", (event) => {
+            // Prevent the default form submission reload
+            event.preventDefault();
+
+            // Capture form inputs safely using standard DOM properties
+            const nameInput = document.getElementById("name").value.trim();
+            const emailInput = document.getElementById("email").value.trim();
+            const favoriteDish = document.getElementById("favorite-dish").value;
+            const cookingExperience = document.getElementById("message").value.trim();
+
+            // Simple validation check
+            if (!nameInput || !emailInput) {
+                alert("Please fill out your name and email address.");
+                return;
+            }
+
+            // Create a friendly success message using captured data
+            console.log("Form Submitted Successfully!");
+            console.log(`Name: ${nameInput}`);
+            console.log(`Email: ${emailInput}`);
+            console.log(`Favorite Dish: ${favoriteDish}`);
+            console.log(`Experience: ${cookingExperience}`);
+
+            // Provide user feedback
+            alert(`Thanks for signing up, ${nameInput}! We've saved your favorite dish as ${favoriteDish}.`);
+
+            // Optional: Reset form fields
+            form.reset();
+        });
+    }
+});
